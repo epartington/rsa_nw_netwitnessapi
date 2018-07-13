@@ -1,0 +1,129 @@
+{
+  "front-version": "2.18.0",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.100.248.9:8015",
+        "path": "/rest/api/incidents/INC-30/alerts"
+      },
+      "id": "b8aec116-d47e-41d5-b8d2-63b8ffbf01be",
+      "lastModified": "2018-07-12T17:15:21.197-04:00",
+      "name": "nw-get-alert",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "NetWitness-Token",
+          "value": ""
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json;charset=UTF-8"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "uri": {
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.100.248.9:8015",
+        "path": "/rest/api/incidents/INC-30"
+      },
+      "id": "c2c56c41-0da9-4974-a145-8eb6afb5d07a",
+      "lastModified": "2018-07-12T20:26:51.924-04:00",
+      "name": "nw-get-incident",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "NetWitness-Token",
+          "value": ""
+        },
+        {
+          "enabled": true,
+          "name": "Accept",
+          "value": "application/json;charset=UTF-8"
+        }
+      ],
+      "metaInfo": {}
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "username",
+              "value": "orchestrator"
+            },
+            {
+              "enabled": true,
+              "name": "password",
+              "value": "Password!1"
+            }
+          ]
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "10.100.248.9:8015",
+        "path": "/rest/api/auth/userpass"
+      },
+      "id": "8913b6ea-98a0-410e-b29c-36e8fcdf0984",
+      "lastModified": "2018-07-12T17:15:46.039-04:00",
+      "name": "nw-getauth",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {}
+    }
+  ]
+}

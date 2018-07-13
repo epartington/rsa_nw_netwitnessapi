@@ -1,0 +1,52 @@
+{
+	"items": [{
+		"id": "5b4777c5c73f943da30581f4",
+		"title": "avkiosk",
+		"detail": "Module_5b468c71e4b0541419c5671c_Alert",
+		"created": "2018-07-12T15:46:13Z",
+		"source": "Event Stream Analysis",
+		"riskScore": null,
+		"type": "Log",
+		"events": [{
+			"source": {
+				"device": {
+					"ipAddress": null,
+					"port": null,
+					"macAddress": null,
+					"dnsHostname": null,
+					"dnsDomain": null
+				},
+				"user": {
+					"username": null,
+					"emailAddress": null,
+					"adUsername": null,
+					"adDomain": null
+				}
+			},
+			"destination": {
+				"device": {
+					"ipAddress": null,
+					"port": null,
+					"macAddress": null,
+					"dnsHostname": null,
+					"dnsDomain": null
+				},
+				"user": {
+					"username": null,
+					"emailAddress": null,
+					"adUsername": null,
+					"adDomain": null
+				}
+			},
+			"domain": "avkiosk2",
+			"eventSource": "192.168.254.182:56005",
+			"eventSourceId": "67524042"
+		}]
+	}],
+	"pageNumber": 0,
+	"pageSize": 100,
+	"totalPages": 1,
+	"totalItems": 1,
+	"hasNext": false,
+	"hasPrevious": false
+}
